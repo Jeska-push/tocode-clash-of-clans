@@ -59,6 +59,7 @@ export default {
         const alias = this.$route.params.itemAlias;
         const item = items.find(el => el.alias === alias);
         this.item = item;
+        console.log(alias);
           if (item === undefined ) {
               console.log('Такой страницы нет');
               window.location.hash = '/404.html'
